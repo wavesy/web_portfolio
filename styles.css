@@ -20,6 +20,15 @@ footer {
   border-radius: 7px 7px 7px 7px;
 }
 
+/* Offset anchors so that navbar doesn't cover them when navigated to via navlinks
+Remember to add corresponding data-bs-offset to body to keep scrollspy working */
+html {
+  scroll-padding-top: 56px;
+}
+
+
+  /* CUSTOMIZE SECTIONS
+  -------------------------------------------------- */
 
   #aboutMe, #skills {
     padding: 1rem;
@@ -34,15 +43,6 @@ footer {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
-
-  /* #skills {
-    margin-top: 3rem;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 3rem;
-    background-color: #777;
-    border-radius: 25px 25px 25px 25px;
-  } */
 
   
   /* CUSTOMIZE THE CAROUSEL
