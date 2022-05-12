@@ -39,7 +39,7 @@ html {
     margin-top: 10rem;
     margin-left: 0px;
     margin-right: 0px;
-    background-color: #777;
+    background-color: rgba(80, 80, 80, 0.95);
     border-radius: 25px 25px 25px 25px;
   }
 
