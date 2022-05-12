@@ -16,22 +16,23 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">About</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#aboutMe">Who?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#myCarousel">Projects</a>
-                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contactMe">Contact</a>
-                </li>
-              </ul>
+              <div class="mx-auto">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe">Who?</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#showcase">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contactMe">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -39,16 +40,24 @@
 
     <main>
         <!-- Short about me -->
-        <div id="aboutMe">
-
+        <div id="aboutMe" class="row">
+          <div class="col">
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus egestas enim. Sed porttitor placerat risus a faucibus. Curabitur a consectetur leo. Ut mollis mi orci, vitae maximus arcu hendrerit sit amet. Duis gravida risus sed tincidunt faucibus. Suspendisse scelerisque semper pulvinar. Duis lacinia ipsum eget magna sollicitudin rutrum.</p>
+          </div>
+          <div class="col">
+            <div class="d-flex justify-content-end">
+              <p>img here</p>
+            </div>
+          </div>
         </div>
 
         <!-- Carousel showcase -->
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="showcase" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            <button type="button" data-bs-target="#showcase" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#showcase" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#showcase" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item">
@@ -58,7 +67,7 @@
                 <div class="carousel-caption text-start">
                   <h1>Example headline.</h1>
                   <p>Some representative placeholder content for the first slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Link</a></p>
                 </div>
               </div>
             </div>
@@ -69,7 +78,7 @@
                 <div class="carousel-caption">
                   <h1>Another example headline.</h1>
                   <p>Some representative placeholder content for the second slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Link</a></p>
                 </div>
               </div>
             </div>
@@ -80,24 +89,64 @@
                 <div class="carousel-caption text-end">
                   <h1>One more for good measure.</h1>
                   <p>Some representative placeholder content for the third slide of this carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Link</a></p>
                 </div>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#showcase" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#showcase" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+
+        <!-- Skills & Interests -->
+        <div id="skills">
+          <div class="row">
+            <h1>Skills & Interests</h1>
+            <div class="col">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         
         <!-- Contact info -->
         <div id="contactMe">
-
+          <div class="row">
+            <div class="col">
+              <div class="d-flex justify-content-center">
+                <h1>email</h1> 
+              </div>  
+            </div>
+            <div class="col">
+              <div class="d-flex justify-content-center">
+                <h1>linkedin</h1> 
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex justify-content-center">
+                <h1>phone</h1> 
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
 
         <!-- FOOTER -->

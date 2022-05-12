@@ -1,20 +1,59 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: #5a5a5a;
+    color: #ffffff;
+    background-image: url("media/sitebg.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
   }
   
+main {
+  margin:auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+footer {
+  font-size:medium;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 7px 7px 7px 7px;
+}
+
+
+  #aboutMe, #skills {
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #777;
+    border-radius: 25px 25px 25px 25px;
+  }
+
+  #contactMe {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  /* #skills {
+    margin-top: 3rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 3rem;
+    background-color: #777;
+    border-radius: 25px 25px 25px 25px;
+  } */
+
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
   /* Carousel base class */
   .carousel {
-    margin-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 25px 25px 25px 25px;
+    overflow: hidden;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -34,42 +73,6 @@ body {
     height: 32rem;
   }
   
-  
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-  
-  /* Center align the text within the three columns below the carousel */
-  .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  .marketing h2 {
-    font-weight: 400;
-  }
-  /* rtl:begin:ignore */
-  .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
-  /* rtl:end:ignore */
-  
-  
-  /* Featurettes
-  ------------------------- */
-  
-  .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-  }
-  
-  /* Thin out the marketing headings */
-  .featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    /* rtl:remove */
-    letter-spacing: -.05rem;
-  }
-  
-  
   /* RESPONSIVE CSS
   -------------------------------------------------- */
   
@@ -84,11 +87,19 @@ body {
     .featurette-heading {
       font-size: 50px;
     }
+
+    footer {
+      font-size: larger;
+    }
   }
   
   @media (min-width: 62em) {
     .featurette-heading {
       margin-top: 7rem;
+    }
+
+    footer {
+      font-size: x-large;
     }
   }
   
