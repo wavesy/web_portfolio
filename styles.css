@@ -54,16 +54,13 @@ html {
 }
 
 #contactMe {
+  margin-top: 20em;
   margin-bottom: 20em;
 }
 
 /* Header padding */
 .row > h1, .row > .col > h1{
   padding-bottom: 1em;
-}
-
-#contactheader {
-  padding-bottom: 5em;
 }
 
 #contactLink {
