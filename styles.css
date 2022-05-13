@@ -26,90 +26,114 @@ html {
   scroll-padding-top: 56px;
 }
 
-#contactheader {
-  padding-bottom: 5rem;
+
+/* CUSTOMIZE NAVBAR
+-------------------------------------------------- */
+
+.navbar {
+  font-size: large;
 }
 
 
-  /* CUSTOMIZE SECTIONS
-  -------------------------------------------------- */
+/* CUSTOMIZE SECTIONS
+-------------------------------------------------- */
+#aboutMe, #skills, .carousel {
+  margin-bottom: 10em;
+}
 
-  #aboutMe, #skills {
-    padding: 1rem;
-    margin-top: 10rem;
-    margin-left: 0px;
-    margin-right: 0px;
-    background-color: rgba(80, 80, 80, 0.95);
-    border-radius: 25px 25px 25px 25px;
+#aboutMe {
+  margin-top: 5em;
+}
+
+#aboutMe, #skills {
+  padding: 1em;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: rgba(80, 80, 80, 0.95);
+  border-radius: 25px 25px 25px 25px;
+}
+
+#contactMe {
+  margin-bottom: 20em;
+}
+
+/* Header padding */
+.row > h1, .row > .col > h1{
+  padding-bottom: 1em;
+}
+
+#contactheader {
+  padding-bottom: 5em;
+}
+
+#contactLink {
+  font-size:40px;
+}
+
+#contactText {
+  font-size: 20px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  border-radius: 25px 25px 25px 25px;
+  overflow: hidden;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
   }
 
-  #contactMe {
-    margin-top: 10rem;
-    margin-bottom: 20rem;
+  footer {
+    font-size: medium;
   }
+}
 
-  /* Header padding */
-  .row > h1, .row > .col > h1{
-    padding-bottom: 1rem;
-  }
+@media (min-width: 62em) {
 
+  footer {
+    font-size: large;
+  }
+}
 
-  /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
-  
-  /* Carousel base class */
-  .carousel {
-    margin-top: 10rem;
-    margin-bottom: 3rem;
-    border-radius: 25px 25px 25px 25px;
-    overflow: hidden;
+@media (max-width: 50em) {
+  #contactText {
+    font-size: 15px;
   }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 32rem;
-  }
-  .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-  }
-  
+}
 
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
-  
-  @media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-      margin-bottom: 1.25rem;
-      font-size: 1.25rem;
-      line-height: 1.4;
-    }
-  
-    .featurette-heading {
-      font-size: 50px;
-    }
-
-    footer {
-      font-size: larger;
-    }
+@media (max-width: 38em) {
+  #contactText {
+    font-size: 9px;
   }
-  
-  @media (min-width: 62em) {
-    .featurette-heading {
-      margin-top: 7rem;
-    }
-
-    footer {
-      font-size: x-large;
-    }
-  }
+}
   
