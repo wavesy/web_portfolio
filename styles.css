@@ -41,6 +41,11 @@ font-size: large;
 margin-bottom: 10em;
 }
 
+#bioPic {
+  max-width: 90%;
+  max-height: auto;
+}
+
 #aboutMe {
 margin-top: 5em;
 }
@@ -125,6 +130,9 @@ footer {
 @media (max-width: 50em) {
 #contactText {
   font-size: 15px;
+}
+#bioPicDiv {
+  display: none;
 }
 }
 
